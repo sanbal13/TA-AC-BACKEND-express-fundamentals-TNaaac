@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*************************** Custom Styles begins here ********************/
+html {
+    font-size: 16px;
+}
+body {
+    line-height: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #93C5FD;
+    color: #1E3A8A;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 70%;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.image {
+    
+}
+/******************* Flex *******************/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-50 {
+    flex: 0 1 50%;
+}
+/******************* Headings *******************/
+h1, h2 {
+    font-weight: 700;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+/******************** Header ********************/
+.navigation li {
+    background-color: #10B981;
+    border: 2px solid #047857;
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+}
+.navigation li:hover {
+    background-color: saddlebrown;
+}
+.navigation li:hover a {
+    color: #10B981;
+}
+.navigation ul {
+    margin: 1rem 0;
+}
+/******************** Main ********************/
+main {
+    margin: 2rem 0;
+}
+/* Home Page */
+article {
+    background-color: #A7F3D0;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: inset 1px 1px 10px #000;
+}
+/* Contact */
+/* Login */
+input, label{
+  display: block;
+}
+input {
+    background-color: #2563EB;
+    color: #6EE7B7;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin: .2rem 0 .5rem 0;
+}
+::placeholder {
+    color: #1E3A8A;
+}
+
+button {
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    background-color: saddlebrown;
+    color: sandybrown;
+    border-radius: 50%;
+    outline: 0;
+    border: 0;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 5px sandybrown;
+}
+button:hover {
+    background-color: sandybrown;
+    color: saddlebrown;
+    box-shadow: 1px 1px 20px saddlebrown;
+}
+
+/******************** Footer ********************/
+footer {
+    background-color: rgba(16, 185, 129, .5);
+    border: 2px solid #047857;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
