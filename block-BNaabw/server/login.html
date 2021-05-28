@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body class="container">
+    <header>
+        <h1>
+            Login
+        </h1>
+        <div class="navigation">
+            <ul class="flex">
+                <li><a href ='/'>Home</a></li>
+                <li><a href ='/login'>Login</a></li>
+                <li><a href ='/contact'>Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="flex">
+        <form action='/form' method ='POST' class="flex-50">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <label for ="email"> Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email-id">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" placeholder="Enter your age">
+        <button type ="submit">Submit</button>
+        </form>
+        <div class="image flex-50">
+        <img src="/media/login.jpg" alt="Hole in the Wall">
+    </div>    
+    </div>
+    </main>
+    <footer>
+        <small>&copy; 2021 Express Middleware</small>
+    </footer>
+</body>
+</html>
